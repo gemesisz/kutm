@@ -14,29 +14,20 @@ This paper provides extensive research on various occurrence cheating methods an
 
 \section{Robust Vision-Based Cheat Detection in Competitive Gaming \cite{jonnalagadda2021robust}}
 
-The online first-person shooter game, Counter-Strike 2 (Formerly known as Counter-Strike:
-Global Offensive) is infamous for its cheating problem and scandals. There have been several
-instances of professional players getting caught cheating on stage.
 In the paper “Robust Vision-Based Cheat Detection in Competitive Gaming” we can explore an
 already existing solution that tries to tackle the cheating problem in Counter Strike - Global
 Offensive, and another first-person shooter game. The main idea of this method of cheat
 detection is using DNNs (deep neural networks) to look for rendered frames, that give away
 visual evidence of a cheating software being used. This can be information in the game that the
 player should not have (seeing otherwise invisible enemies through walls, or on the map), or the
-GUI (graphical user interface) of the cheat itself.
+GUI (graphical user interface) of the cheat itself. \newline
 The way it is implemented is very straightforward, yet novel. The GPU’s frame buffer is captured
 right before it appears on the computer screen, and is analyzed by a trained DNN. The DNN is
 trained to look for altered and suspicious pixel patterns. The model's training took place on a
 large set of frames from the games with and without cheats. It calculates both the probability of
 a frame containing cheats and the confidence value, which is used both to avoid false positives
 and to help the developers know when the model needs to be retrained, for example when a
-cheat software got changed, to avoid detection.
-One of the major advantages of this method of cheat detection is its regard for privacy. Most
-anti-cheat software accesses the whole memory, leaving room for potential privacy breaches
-and data leaks. Some anti-cheats also operate on the kernel level (Vanguard - Valorant). If these
-are coded poorly and can be exploited they can create severe security vulnerabilities. Compared
-to these solutions visual cheat detection can be considered less intrusive, and more safe
-regarding data protection.
+cheat software got changed, to avoid detection. \newline
 The results were auspicious: The more visually prominent the cheating was, the better the
 system got at successfully detecting the presence of cheats. Different configurations were
 mentioned, and the exact results varied based on the configuration in use. The highest overall
