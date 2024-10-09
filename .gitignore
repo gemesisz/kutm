@@ -243,3 +243,6 @@ TSWLatexianTemp*
 
 .idea/
 out/
+
+#macOS file attributes
+.DS_Store
