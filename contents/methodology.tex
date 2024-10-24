@@ -1,2 +1,22 @@
 \section{Methodology}
 \label{ch:methodology}
+
+We based our anti-cheat system on the use of Deep-Neural-Networks (DNN).
+In order to understand what a DNN is, first we have to mention ANNs. ANN stands for Artificial Neural Network, and it is a neural network model that is inspired by the structure of the human brain. They consist of three types of layers : Input, Hidden and Output.The input layer takes in raw data, while the output layer produces the result. The hidden layer is an intermediary layer, that helps process the data by applying weights and biases.
+With that said, a DNN, or Deep Neural Network is a more advanced kind of ANN. The main difference is the depth. A DNN has multiple hidden layers, hence the name “Deep”. Deep Neural Networks are capable of completing way more complex tasks than simple ANNs. These tasks can range from image recognition all the way to language processing. The learning process of a DNN is similar to that of an ANN. It involves training the network by adjusting the hidden layer weights, based on the end result.
+
+We used DNNs to analyze player behavior and look for irregular gameplay patterns. To achieve this we used large training datasets of player behavior from cheaters and legitimate players. Our model looks at several behavior patterns that can indicate cheating, such as players looking through walls, inhuman reaction times, abnormal movement patterns. This includes both “spinbotting” and aiming using abnormally straight lines, since humans can’t draw perfectly straight lines with their mouse movement. Our system also utilizes user input analysis, which can detect illegal keyboard or mouse macros.
+
+We have also used convolutional neural networks to help detect cheaters. During the AI model's training, we have used data based on players' interactions, and in-game data. These consisted of behavioral analysis, such as highly precise and fast movements and other anomalies. Using a large scale of inputs from both cheating and normal players, this model learns these differences and can differentiate them.
+
+To verify the model's accuracy and efficiency, we used cross-validation. This helped us test the model by splitting the data into multiple sets. This has ensured that there is no overfitting and helped this model perform better compared to what it was capable of before. In our experiment, we found that the 5-fold or 10-fold cross-validation was more effective, and mostly these were used during training.
+
+The model's results were highly accurate, with a very small percentage of false positives. This CNN model has helped the whole cheat detection system advance in this territory as well. Using this model, aim bots and trigger bots are mostly caught giving a new depth to our cheat detection.
+
+We applied XAI technology along with the other AI models to receive feedback from our anti-cheat system. Our intention was to severely reduce the amount of false positives and to eliminate misconduct from our anti-cheat system. The feedback XAI generates provides a reason proving the validity of the detection system, this feedback is also visible to game operators and the developers so they can fine-tune or overrule the anti-cheat system, further reducing misconduct in certain cases of system alerts or flags.
+
+Behavioural tracking and evolution tracking was also implemented in our system. By tracking player statistics and success rate we further improved the accuracy of cheat detection. Sudden changes in a player’s statistics over a given period of time indicates some form of cheating, which could show that the player uses game cheats or that another player is using their account. XAI helps in determining the exact cause of the flagging, this way the player receives the appropriate punishment. 
+
+Behavioural tracking proves long-term analysis of the players’ actions increases the accuracy of the anti-cheat system, but in order to give players the best experience and to ensure the competitive integrity of games we trained our model to provide low-latency real-time cheat detection. To train our system we used small fragments of game data at a time to improve response time and the reliability of low-latency decisions.
+
+...
