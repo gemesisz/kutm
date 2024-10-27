@@ -1,2 +1,34 @@
 \section{Background}
 \label{ch:background}
+
+\subsection{Fundamental concepts}
+
+\subsubsection{What is a multiplayer game?}
+
+A multiplayer game is a type of video game that allows multiple players to interact and compete with or against each other in a shared virtual environment. In these games, players usually compete with each other for the best ranking, highest score or reward. Sometimes individually, but sometimes they play together as a team. With the rise of online gaming, cheating has become a major problem in multiplayer games, disrupting the fairness and balance that developers work so hard to achieve. Cheating in these games usually involves players using or exploiting unauthorized means to gain an unfair advantage over others, which can ruin the experience for everyone involved and the game itself.
+
+For example, in the popular game Counter-Strike: Global Offensive (CS), some players use aimbots to automatically aim and shoot \cite{291120}, removing the need for skill and giving them an unfair edge in competitive matches. Another common form of cheating can be seen in Fortnite, where some players use wallhacks \cite{10.1145/3372297.3417890} to see enemies through walls, allowing them to prepare ambushes or avoid conflicts that would normally be unavoidable. Game developers actively combat these issues by implementing anti-cheat software and regularly banning accounts that are found cheating. However, as technology advances, so do the methods of cheating, so it's a constant challenge for developers to keep multiplayer games fair and enjoyable. Despite these efforts, cheating remains a persistent problem that affects players' enjoyment.
+
+\subsubsection{XAI concepts}
+
+Explainable Artificial Intelligence (XAI) is a technology designed to make AI models more transparent and understandable to humans. Traditional AI, especially deep learning, often functions as a black box, meaning users cannot easily understand how it reaches its conclusions. Exploring AI's decision-making process helps people apprehend AI decisions more easily. This is the change wich the XAI aims. Transparency from explanations is key in areas such as healthcare, finance, and law, where AI decisions can have significant consequences. For instance, a doctor using an AI system for diagnosing conditions needs to know why the AI recommends a specific treatment.
+
+XAI works through techniques such as feature visualization, where specific factors influencing a decision are highlighted, or surrogate models, which approximate and explain complex models. By making AI systems more interpretable, XAI helps build trust, allowing users to validate or challenge the AI's conclusions. It also helps identify distortions or errors in the model, reducing unintended damage. As AI becomes more embedded in everyday life, XAI plays a critical role in ensuring ethical, fair, and safe use of AI technologies.
+
+\subsection{Anti cheating solutions}
+
+\subsubsection{Non AI anti cheating solutions}
+
+Non-AI anti-cheating methods are techniques used by game developers and administrators to prevent or reduce cheating in multiplayer games without relying on artificial intelligence. One of the most common methods is server-side checks, which involve monitoring player actions for suspicious patterns directly on the game's server. This method can detect things like impossible moves or excessively high scores, which often indicate cheating. Another approach is the use of encrypted game files to prevent players from modifying the game code or assets, which is a common way cheaters create unfair advantages.
+
+Game developers also use measures such as integrity checking, which regularly checks that players' game files are the same as the original, preventing the use of modified or hacked files. Hardware bans are another powerful deterrent that prevents a specific device from accessing the game if cheating is detected. Additionally, some games require players to log in through secured platforms or services, making it difficult to create multiple accounts to cheat. Real-time reporting systems are also common, allowing players to flag suspicious behavior, which is then reviewed by moderators or automated systems. Temporary or permanent bans for cheaters are also widespread, often used as a warning to others. Finally, some games use periodic updates and patches that not only fix bugs, but also potential exploits that cheaters might use. Together, these methods help maintain fairness in multiplayer games, even without advanced AI-driven solutions.
+
+\subsubsection{Best AI anti cheating solutions}
+
+AI-driven anti-cheat methods have become extremely effective in detecting and preventing cheating in online multiplayer games. These systems use machine learning algorithms to monitor player behavior and identify anomalies that indicate cheating. One prominent example is Activision's Ricochet anti-cheat system \cite{doi:10.1080/10447318.2023.2204276} used in Call of Duty games, which uses machine learning to detect irregular gameplay patterns, such as unnatural aiming or movement speed. By analyzing massive amounts of data from legitimate and cheating players, Ricochet can flag suspicious behavior with high accuracy and adapt to new cheating methods quickly.
+
+Another successful AI-based approach is employed in Valorant, a popular first-person shooter developed by Riot Games. Its anti-cheat system, Vanguard \cite{bohnerthanti}, incorporates both traditional methods and AI, focusing on both client-side monitoring and server-side detection. AI models analyze player input and game data in real-time, comparing it to normal patterns to detect cheating, such as aimbots or wallhacks. This proactive approach enables Vanguard to detect previously unseen cheats, improving system adaptability to evolving threats.
+
+AI anti-cheat systems also utilize deep learning to detect boosting, where players artificially inflate their rank. For instance, FACEIT, an online competitive gaming platform, uses machine learning to track suspicious ranking progressions and automatically flag accounts for review \cite{faceitanticheat}. 
+
+These AI methods are more efficient than traditional ones because they can continuously learn from new data, increasing their accuracy over time. However, developers still face the challenge of ensuring privacy and data security while using these powerful tools. By combining real-time analysis and continuous adaptation, AI-based anti-cheat systems significantly improve the fairness and integrity of online gaming experiences.
