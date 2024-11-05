@@ -1,13 +1,22 @@
 \section{Discussion}
 \label{ch:discussion}
 
+% PART1 - in-depth
+% DNN, CNN
 The usage of DNNs showed impressing results in anti-cheat detection for games. 
-With the help of DNNs we applied image recognition during gameplay and could determine illegal or cheat-likely movement and accurately decide whether a player is cheating or not. The usage of image recognition showed interesting results on how cheat developers trick currently used anti-cheat systems. The combination of AI models we implemented trains itself with the newly fed user data and improves the detection of unusual player movements. 
+With the help of DNNs we applied image recognition during gameplay and could determine illegal or cheat-likely movement and accurately decide whether a player is cheating or not. The usage of image recognition showed interesting results on how cheat developers trick currently used anti-cheat systems. 
+
+The combination of AI models we implemented trains itself with the newly fed user data and improves the detection of unusual player movements. In addition to DNNs we used CNNs to monitor and recognize illegal, unusual or suspicious user actions and inputs.
+Splitting the data into multiple sets using 10-fold cross-validation proved the most useful for input recognition during the testing of our model.
 Analysing user input helped with gaining a deeper understanding of the average user input and the average actions of a player. This proved useful in anti-cheat detection, because unlikely or missing inputs for certain game actions showed that a player was cheating with a great success rate.
-The DNN solutions could identify obvious cheating with a 95\% accuracy. This shows that DNN models are powerful tools in combating cheating in video games.
 
-...
+Our studies have shown that the use of XAI, along with other models delivers a more reliable and verifiable source for cheat detection. When used with real-time detection, XAI performed slower but still yielded accurate reasons for cheating. Given enough training it could improve and provide the same quality of explanations along with the real-time cheat detection models.
 
-Our studies have shown that the use of XAI, along with other models delivers a more reliable and verifiable source for cheat detection. When used with real-time detection, XAI proved slower and less responsive, yielding less accurate reasons for cheating. Given enough training it could improve and provide accurate explanations along with the real-time cheat detection models.
+% MMORPG
+We implemented approaches used in MMORPG cheat detection into our system, like statistical analysis and similarity analysis. These methods improved the overall accuracy of our system for a wider variety of games because of their user-oriented monitoring. However, they also deteriorated the performance and speed of our model, therefore we determined these methods unfit for our solution to this problem.
 
-...
+% PART2 user (???)
+% PART3 shortest
+The use of AI for anti-cheat systems is an impressive and highly efficient way of detecting cheaters in video games. Our combination of models and technologies provides an accurate prediction of a cheater thanks to the DNN and CNN image recognition and user action tracking technologies, the system is made reliable thanks to the XAI model and it's ability to explain its' decisions for cheat detection.
+
+We believe this system is proof that AI is the future of anti-cheat detection and urge everyone interested in the topic to research further into these AI systems or even implement them in existing games and cheat detection systems.
