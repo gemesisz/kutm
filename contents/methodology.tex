@@ -7,7 +7,7 @@ Our core model is based on DNNs, which are used to analyze player behavior and d
 
 We also integrated convolutional neural networks to help detect more nuanced cheating indicators. During the AI model's training, we have used data based on players' interactions, and in-game data. These consisted of behavioral analysis, such as highly precise and fast movements and other anomalies. Using a large scale of inputs from both cheating and normal players, this model learns these differences and can differentiate them. While CNNs alone had some limitations in prior studies, their integration with DNNs improved our system’s ability to detect a broader range of cheating behaviors.
 
-To verify the model’s accuracy and efficiency, we used cross-validation, primarily 5-fold and 10-fold methods, which allowed us to test the model by splitting the data into multiple sets. Cross-validation ensured that the model avoided overfitting, which helped it perform better and consistently across varied games. This combination of models helped keep the benefits of each model.
+To verify the model’s accuracy and efficiency, we used cross-validation, primarily 5-fold and 10-fold methods, since these performed better, as seen in figure~\ref{fig:crossvalidation}, which allowed us to test the model by splitting the data into multiple sets. Cross-validation ensured that the model avoided overfitting, which helped it perform better and consistently across varied games. This combination of models helped keep the benefits of each model.
 
 \begin{figure}[h]
 \centering
@@ -38,7 +38,7 @@ Throughout the course of the development, we tried several approaches based on e
 \caption{\label{fig:falsepositive}Differences between models' false positive percentages.}
 \end{figure}
 
-Instead of enhancing the accuracy of detection, the methods increased the noise and the unnecessary intricacy, which was probably due to the distinctive gameplay structure of MMORPG in relation to other genres. As such, these approaches failed to achieve the kind of cross-genre reliability we were looking for. Thus, in the end, we reached the conclusion that those methods should not be included in our final model and and applied alternative strategies instead which were not dependent on the game genre.
+Instead of enhancing the accuracy of detection, the methods increased the noise and the unnecessary intricacy, as seen in figure~\ref{fig:model} and in figure~\ref{fig:falsepositive}, which was probably due to the distinctive gameplay structure of MMORPG in relation to other genres. As such, these approaches failed to achieve the kind of cross-genre reliability we were looking for. Thus, in the end, we reached the conclusion that those methods should not be included in our final model and and applied alternative strategies instead which were not dependent on the game genre. With this approach, we can see each model's success rate, shown in figure~\ref{fig:success}, is significantly higher than the rates obtained by other model combinations.
 
 \begin{figure}[h]
 \centering
