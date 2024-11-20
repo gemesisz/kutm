@@ -16,6 +16,8 @@ This paper provides extensive research on various occurrence cheating methods an
 
 Based on the findings of this paper we learned about server side cheat prevention and broadened our knowlegde on the cheating habits of MMORPG players, this showed us that different types of games have different cheater habits. We added several types of analysis to our method in order to detect the cheating habits and widen the coverage of our anti-cheat system. 
 
+In this paper the researchers focused on the aspects of cheating mainly in MMORPG games. Compared to this, in our research we wanted to expand our cheat detection model to different video games. Our main focus was on first-person shooters but our intention with the research was to create an anti-cheat system that is applicable in almost any type of video game.
+
 \subsection{Robust Vision-Based Cheat Detection in Competitive Gaming \cite{jonnalagadda2021robust}}
 
 In the paper “Robust Vision-Based Cheat Detection in Competitive Gaming” we can explore an
@@ -44,6 +46,8 @@ online games, and it is worth exploring further when it comes to AI cheat detect
 
 This paper provided us with in-depth information about the use of DNNs in anti-cheat systems and important ways of detecting cheaters, so we based our use of DNNs on the findings of the article which improved our initial results.
 
+Compared to this paper's findings about image-based cheat detection we added more types of cheat prediction methods with the help of CNNs in addition to DNNs. Further expanding the abilities of our anti-cheat system, we included XAI, which helped us raise the prediction rate compared to the highest achievable rate using the findings of their research.
+
 \subsection{Deep learning and multivariate time series for cheat detection in video games \cite{pinto2021deep}}
 
 This research introduces a novel cheat detection system for online video games that, instead of traditional in-game data, is based on human-computer interaction (HCI) data, such as keystrokes and mouse movements. Existing systems use game-specific customization to detect cheating, while this approach uses player interaction data as multivariate time series analyzed by convolutional neural networks (CNNs). This makes the system adaptable to various games and capable of detecting cheaters without any game-specific information. The method successfully identifies cheats like aimbots and triggerbots in first-person shooter (FPS) games by recognizing behavioral patterns that differ from typical human interactions.
@@ -52,6 +56,8 @@ The study was performed on data collected from players of Counter-Strike: Global
 
 This article shined a light on the importance of checking input data and human interactions, none of which we have considered initially in our system. Examining human interactions creates a more reliable way of cheat-detection so we implemented it in our method.
 
+While this research also applied CNNs to detect cheating behaviour, in our research we tried to broaden the amount of video games the anti-cheat system is applicable to, by including more AI methods to our system. In comparison, the prediction rates achieved in this paper exceed ours, but their research focused strictly on first-person shooters and cheats specific to those video games, while our research targets a much wider range of games.
+
 \subsection{Explainable AI for Cheating Detection and Churn Prediction in Online Games \cite{tao2022explainable}}
 
 The paper explores the application of AI and XAI (eXplainable AI) in online gaming, focusing on issues such as game cheating detection and player churn prediction. It discusses how AI has historically been applied in games for tasks like matchmaking and behaviour monitoring. XAI specifically addresses the black-box nature of AI models, enhancing trust by providing explanations for AI decisions. The authors introduce datasets from NetEase Games, using a large amount of game logs, player behaviour sequences, client images, and social graphs to improve the transparency and accuracy of AI models.
@@ -59,3 +65,5 @@ The paper explores the application of AI and XAI (eXplainable AI) in online gami
 The authors concluded that the use of XAI could be preferred over the black-box model having received more positive feedback from game operators and game designers alike for its’ transparency in reasoning and explanation. These results are far better than the authors expected and they claim that this technology should be further examined and developed to achieve even better results.
 
 The findings of this paper proved to us that having explanations for the AI models' behaviour and reasoning is just as important as detecting the cheats themselves. Without an explanation we can't really know why certain actions are detected as cheating, with an explanation we reduce the amount of mistakes the cheat-detection system could make.
+
+Their approach integrates XAI for churn prediction alongside cheat detection in multiple video games, much like our intentions. Expanding on the ideas of this paper, our main focus shifted more towards the cheat detection. We added more AI methods to our anti-cheat system, helping us detect cheaters more efficiently, while still maintaining the transparency available with XAI.
